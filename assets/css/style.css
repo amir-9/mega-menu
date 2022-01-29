@@ -1,0 +1,125 @@
+/*           reset            */
+:root {
+    --font-color: #333;
+    --input-bg-color: #f0f0f1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sans, "Segoe UI", sans-serif;
+
+}
+
+@font-face {
+    font-family: "Sans";
+    src: url("../fonts/Sans.eot");
+    src: url(../fonts/Sans.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Sans.woff) format("woff"),
+    url(../fonts/Sans.ttf) format("truetype"),
+    url(../fonts/Sans.svg#fontawesome) format("svg")
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+body {
+    direction: rtl;
+    font-family: Sans, "Segoe UI", sans-serif;
+    color: var(--font-color);
+}
+
+
+/*            navbar             */
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 5px 25px 3px rgba(0 0 0 /3%);
+}
+
+.header .container {
+    width: 1646px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header .header-top {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+
+}
+
+.header .right {
+    display: flex;
+}
+
+.header .search-input {
+    background: var(--input-bg-color);
+    width: 765px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.header .search-input input {
+    border: none;
+    background: none;
+    width: 100%;
+    padding: 0.4rem;
+    line-height: 2rem;
+}
+
+.header .search-input button {
+    border: none;
+    border-radius: 10px;
+    color: #666;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.nav {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu ul, .nav-menu li, .nav-menu li a {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+.nav-menu li a{
+    gap: 5px;
+}
+.nav-menu > ul > li > a, .location a {
+    padding: 0.5rem;
+    font-size: 11px;
+}
+
+.nav-menu > ul > li > a > span:first-child, .location a>span:last-child {
+    font-size: 16px;
+}
+.nav-menu > ul > li:nth-child(5) > a > span:first-child{
+    color: #6b006b;
+}
+.nav-menu > ul > li:nth-child(7) > a > span:first-child{
+    color: #0000ff;
+}
+
+
+
+
+
+
