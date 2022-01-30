@@ -65,6 +65,12 @@ body {
     display: flex;
 }
 
+.header .header-logo {
+    font-size: 20px;
+    padding: 5px;
+    color: #ff0000;
+}
+
 .header .search-input {
     background: var(--input-bg-color);
     width: 765px;
@@ -100,23 +106,98 @@ body {
     align-items: center;
     padding: 0.5rem 0;
 }
-.nav-menu li a{
+
+.nav-menu li a {
     gap: 5px;
 }
+
 .nav-menu > ul > li > a, .location a {
     padding: 0.5rem;
     font-size: 11px;
 }
 
-.nav-menu > ul > li > a > span:first-child, .location a>span:last-child {
+.nav-menu > ul > li > a > span:first-child, .location a > span:last-child {
     font-size: 16px;
 }
-.nav-menu > ul > li:nth-child(5) > a > span:first-child{
+
+.nav-menu > ul > li:nth-child(5) > a > span:first-child {
     color: #6b006b;
 }
-.nav-menu > ul > li:nth-child(7) > a > span:first-child{
+
+.nav-menu > ul > li:nth-child(7) > a > span:first-child {
     color: #0000ff;
 }
+
+/*********** hover under line code ************/
+
+
+/* Clearfix */
+.group:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+*:first-child + html .group {
+    zoom: 1;
+}
+
+/* IE7 */
+
+
+/* Example One */
+#example-one {
+    position: relative;
+}
+
+#example-one li {
+    display: inline-block;
+}
+
+
+#magic-line {
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    padding: 0;
+    background: #ff0000;
+}
+
+.ie6 #example-one li, .ie7 #example-one li {
+    display: inline;
+}
+
+.ie6 #magic-line {
+    bottom: -3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
