@@ -175,16 +175,80 @@ body {
     bottom: -3px;
 }
 
+/*           mega menu styles             */
+.header .current_page_item {
+    position: relative;
+}
+
+.header .mega-box {
+    position: absolute;
+    border: 1px solid #777;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+}
+
+.header .mega-box .subjects {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 230px;
+
+}
+
+.mega-box .subject span {
+    font-size: 12px;
+}
+
+.mega-box .subjects > li {
+    width: 230px;
+    padding: 0.5rem 1rem;
+    border-radius: 0 5px 5px 0;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
 
 
+.mega-box .subjects > li:hover {
+    color: #ef394e;
+    background: #f9f9f9;
+    border-radius: 0 5px 5px 0;
+    border-top: 1px solid #f0f0f1;
+    border-bottom: 1px solid #f0f0f1;
 
+}
 
+.mega-box .subjects-children {
+    width: 1416px;
+}
 
+.mega-box .subjects-children .row {
+    display: flex;
+    justify-content: space-between;
+    width: 1416px;
+}
 
+.mega-box .subjects-children .column {
+    flex: 1;
+}
+.mega-box .subjects-children .column ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    align-items: flex-start;
+}
 
+.mega-box .subjects-children .column ul>li{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
 
-
-
+}
+.mega-box .subjects-children  h4{
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+}
 
 
 

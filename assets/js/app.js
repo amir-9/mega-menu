@@ -12,7 +12,7 @@ $magicLine
     .data("origLeft", $magicLine.position().left)
     .data("origWidth", $magicLine.width());
 
-$("#example-one li")
+$("#example-one>li")
     .find("a")
     .hover(
         function () {
