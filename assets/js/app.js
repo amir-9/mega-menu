@@ -1,5 +1,7 @@
+// noinspection JSJQueryEfficiency
+let megaMenu = $('.mega-box');
 let $el, leftPos, newWidth;
-var cnt;
+let cnt = 1;
 /* Add Magic Line markup via JavaScript, because it ain't going to work without */
 $("#example-one").append("<li id='magic-line'></li>");
 
@@ -11,34 +13,35 @@ $magicLine
     .data("origLeft", $magicLine.position().left)
     .data("origWidth", $magicLine.width());
 
-console.log($("#example-one>li"))
 
-$(".current_page_item").hover(
+$(".current_page_item>h3").mouseenter(
+    cnt=1
+)
+megaMenu.hover(
     function () {
-        cnt = 1;
-
-    }, function () {
-        cnt=0
+        cnt = 2;
+    },
+    function () {
+        cnt = 1
     }
-
 )
 
 $("#example-one>li")
     .find("a")
     .hover(
         function () {
-            if(cnt===0) {
+            if (cnt === 0) {
                 $el = $(this);
                 leftPos = $el.position().left - 8;
-                // $magicLine.css("left","818.5225px !important")
                 newWidth = $el.parent().width();
-                // console.log(leftPos)
                 $magicLine.stop().animate({
                     left: leftPos,
                     width: newWidth,
                     opacity: 1
                 });
-            }else{
+            } else if (cnt === 2) {
+                console.log('2')
+            } else if(cnt===1){
                 $el = $(this);
                 leftPos = '820px';
 
@@ -62,7 +65,7 @@ $magicLine[0].style.width = '0'
 ////////
 let section = $('section')
 let currentPageItem = $('.current_page_item');
-let megaMenu = $('.mega-box');
+
 megaMenu.fadeOut(0)
 currentPageItem.hover(
     function () {
@@ -72,6 +75,30 @@ currentPageItem.hover(
     function () {
         megaMenu.fadeOut(200)
         section.toggleClass('section-darken')
+    }
+)
+let megaMenuSubjects = $('.subjects>li')
+let megaMenuSubjectsChildren = $('.subjects-children>li')
+Array.from(megaMenuSubjectsChildren).forEach((item) => {
+    if (item.className === 'digital') {
+        item.style.display = ''
+    } else {
+        item.style.display = 'none'
+    }
+})
+megaMenuSubjects.hover(
+    function () {
+        // console.log(this.className)
+        Array.from(megaMenuSubjectsChildren).forEach((item) => {
+            if (item.className === this.className) {
+                item.style.display = ''
+            } else {
+                item.style.display = 'none'
+            }
+        })
+    },
+    function () {
+
     }
 )
 
