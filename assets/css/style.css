@@ -1,7 +1,7 @@
 /*           reset            */
 :root {
     --font-color: #333;
-    --input-bg-color: #f0f0f1;
+    --input-bg-color: #e2e2e2;
 }
 
 * {
@@ -92,6 +92,7 @@ body {
     color: #666;
     font-size: 18px;
     margin-right: 5px;
+    background: inherit;
 }
 
 .nav {
