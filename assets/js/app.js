@@ -1,7 +1,9 @@
 // noinspection JSJQueryEfficiency
 let megaMenu = $('.mega-box');
 let $el, leftPos, newWidth;
-let cnt = 1;
+let firstLi=false;
+let isInsideOfMm = false;
+
 /* Add Magic Line markup via JavaScript, because it ain't going to work without */
 $("#example-one").append("<li id='magic-line'></li>");
 
@@ -14,15 +16,20 @@ $magicLine
     .data("origWidth", $magicLine.width());
 
 
-$(".current_page_item>h3").mouseenter(
-    cnt=1
+$(".current_page_item").hover(
+    function () {
+        firstLi = true
+    },
+    function () {
+        firstLi = false
+    }
 )
 megaMenu.hover(
     function () {
-        cnt = 2;
+        isInsideOfMm=true
     },
     function () {
-        cnt = 1
+        isInsideOfMm=false
     }
 )
 
@@ -30,7 +37,7 @@ $("#example-one>li")
     .find("a")
     .hover(
         function () {
-            if (cnt === 0) {
+            if (!firstLi && !isInsideOfMm) {
                 $el = $(this);
                 leftPos = $el.position().left - 8;
                 newWidth = $el.parent().width();
@@ -39,12 +46,10 @@ $("#example-one>li")
                     width: newWidth,
                     opacity: 1
                 });
-            } else if (cnt === 2) {
-                console.log('2')
-            } else if(cnt===1){
+            } else if(firstLi && !isInsideOfMm){
+                console.log('hereeeeeeeeeeeeeee')
                 $el = $(this);
                 leftPos = '820px';
-
                 newWidth = $el.parent().width();
                 $magicLine.stop().animate({
                     left: leftPos,
