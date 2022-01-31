@@ -43,7 +43,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    box-shadow: 0 5px 25px 3px rgba(0 0 0 /3%);
+    box-shadow: 0 5px 25px 3px rgba(0 0 0 /8%);
 }
 
 .header .container {
@@ -179,12 +179,23 @@ body {
 .header .current_page_item {
     position: relative;
 }
+.header .current_page_item>h3{
+    font-size: 11px;
+    font-weight: 400;
+    margin: 0 8px;
+}
+.header .current_page_item>h3>a>span>i{
+    font-size: 16px;
+}
+
 
 .header .mega-box {
     position: absolute;
-    border: 1px solid #777;
+    /*border: 1px solid #777;*/
     border-radius: 0 0 10px 10px;
     display: flex;
+    line-height: 1rem;
+    background: #fff;
 }
 
 .header .mega-box .subjects {
@@ -192,11 +203,21 @@ body {
     flex-direction: column;
     align-items: flex-start;
     width: 230px;
+    border-left: #eeeeee 1px solid;
 
 }
 
 .mega-box .subject span {
     font-size: 12px;
+}
+
+.mega-box .all-items-of-category{
+    font-size: 13px;
+    font-weight: 400;
+    margin-right: 10px!important;
+}
+.mega-box .all-items-of-category i{
+    margin-top: 5px;
 }
 
 .mega-box .subjects > li {
@@ -229,6 +250,7 @@ body {
 
 .mega-box .subjects-children .column {
     flex: 1;
+    margin-right: 10px;
 }
 .mega-box .subjects-children .column ul{
     display: flex;
@@ -237,6 +259,13 @@ body {
     margin: 0;
     align-items: flex-start;
 }
+.mega-box .subjects-children .column span {
+    border-right: 2px solid #ff0000;
+    position: absolute;
+    top: 30%;
+    bottom: 25%;
+    right: -10px;
+}
 
 .mega-box .subjects-children .column ul>li{
     padding: 0;
@@ -244,15 +273,28 @@ body {
     font-size: 12px;
 
 }
-.mega-box .subjects-children  h4{
+.mega-box .subjects-children h4{
     padding: 0;
-    margin: 0;
+    margin: 0 10px 0 0;
     font-size: 13px;
+    position: relative;
 }
+.section-darken{
+    background: rgba(0 0 0/ 20%);
+    height: 1500px;
+}
+.show-mm{
+    display: block;
+    z-index: 10;
+    opacity: 1;
+    transition: all 500ms;
+}
+.hide-mm{
+    display: none!important;
+    opacity: 0;
+    transition: all 500ms;
 
-
-
-
+}
 
 
 

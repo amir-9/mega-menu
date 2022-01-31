@@ -5,7 +5,6 @@ $("#example-one").append("<li id='magic-line'></li>");
 
 let $magicLine = $("#magic-line");
 
-
 $magicLine
     .width($(".current_page_item").width())
     .css("left", $(".current_page_item a").position().left)
@@ -19,7 +18,7 @@ $("#example-one>li")
             $el = $(this);
             leftPos = $el.position().left;
             newWidth = $el.parent().width();
-            console.log(leftPos)
+            // console.log(leftPos)
             $magicLine.stop().animate({
                 left: leftPos,
                 width: newWidth,
@@ -33,12 +32,23 @@ $("#example-one>li")
             });
         }
     );
-/* Kick IE into gear */
-$(".current_page_item_two a").mouseenter();
-//////
 
 $magicLine[0].style.width='0'
-
+////////
+let section=$('section')
+let currentPageItem=$('.current_page_item');
+let megaMenu=$('.mega-box');
+megaMenu.fadeOut(0)
+currentPageItem.hover(
+    function () {
+        megaMenu.fadeIn(200)
+        section.toggleClass('section-darken')
+    },
+    function (){
+        megaMenu.fadeOut(200)
+        section.toggleClass('section-darken')
+    }
+)
 
 
 
