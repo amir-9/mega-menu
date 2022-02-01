@@ -47,7 +47,6 @@ $("#example-one>li")
                     opacity: 1
                 });
             } else if(firstLi && !isInsideOfMm){
-                console.log('hereeeeeeeeeeeeeee')
                 $el = $(this);
                 leftPos = '820px';
                 newWidth = $el.parent().width();
@@ -93,10 +92,14 @@ Array.from(megaMenuSubjectsChildren).forEach((item) => {
 })
 megaMenuSubjects.hover(
     function () {
-        // console.log(this.className)
+
         Array.from(megaMenuSubjectsChildren).forEach((item) => {
-            if (item.className === this.className) {
+            if ($(this).hasClass(item.className)) {
                 item.style.display = ''
+                Array.from(megaMenuSubjects).forEach((item2) => {
+                    $(item2).removeClass('selected-subject')
+                })
+                $(this).addClass('selected-subject')
             } else {
                 item.style.display = 'none'
             }

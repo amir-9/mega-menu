@@ -41,6 +41,7 @@ body {
 
 .header {
     width: 100%;
+    padding: 0 2rem;
     display: flex;
     justify-content: center;
     box-shadow: 0 5px 25px 3px rgba(0 0 0 /8%);
@@ -51,6 +52,8 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    position: relative;
+
 }
 
 .header .header-top {
@@ -131,7 +134,9 @@ body {
 
 /*********** hover under line code ************/
 
-
+#tablet-header{
+    display: none;
+}
 /* Clearfix */
 .group:after {
     visibility: hidden;
@@ -177,26 +182,24 @@ body {
 }
 
 /*           mega menu styles             */
-.header .current_page_item {
-    position: relative;
-}
-.header .current_page_item>h3{
+
+.header .current_page_item > h3 {
     font-size: 11px;
     font-weight: 400;
     margin: 0 8px;
 }
-.header .current_page_item>h3>a>span>i{
+
+.header .current_page_item > h3 > a > span > i {
     font-size: 16px;
 }
 
-
 .header .mega-box {
     position: absolute;
-    /*border: 1px solid #777;*/
     border-radius: 0 0 10px 10px;
     display: flex;
     line-height: 1rem;
     background: #fff;
+    /*width: 1646px;*/
 }
 
 .header .mega-box .subjects {
@@ -212,12 +215,13 @@ body {
     font-size: 12px;
 }
 
-.mega-box .all-items-of-category{
+.mega-box .all-items-of-category {
     font-size: 13px;
     font-weight: 400;
-    margin-right: 10px!important;
+    margin-right: 10px !important;
 }
-.mega-box .all-items-of-category i{
+
+.mega-box .all-items-of-category i {
     margin-top: 5px;
 }
 
@@ -236,6 +240,14 @@ body {
     border-radius: 0 5px 5px 0;
     border-top: 1px solid #f0f0f1;
     border-bottom: 1px solid #f0f0f1;
+}
+
+.selected-subject {
+    color: #ef394e;
+    background: #f9f9f9;
+    border-radius: 0 5px 5px 0;
+    border-top: 10px solid #f0f0f1;
+    border-bottom: 1px solid #f0f0f1;
 
 }
 
@@ -247,19 +259,22 @@ body {
     display: flex;
     justify-content: space-between;
     width: 1416px;
+
 }
 
 .mega-box .subjects-children .column {
     flex: 1;
     margin-right: 10px;
 }
-.mega-box .subjects-children .column ul{
+
+.mega-box .subjects-children .column ul {
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
     align-items: flex-start;
 }
+
 .mega-box .subjects-children .column span {
     border-right: 2px solid #ff0000;
     position: absolute;
@@ -268,30 +283,34 @@ body {
     right: -10px;
 }
 
-.mega-box .subjects-children .column ul>li{
+.mega-box .subjects-children .column ul > li {
     padding: 0;
     margin: 0;
     font-size: 12px;
 
 }
-.mega-box .subjects-children h4{
+
+.mega-box .subjects-children h4 {
     padding: 0;
     margin: 0 10px 0 0;
     font-size: 13px;
     position: relative;
 }
-.section-darken{
+
+.section-darken {
     background: rgba(0 0 0/ 20%);
-    height: 1500px;
+
 }
-.show-mm{
+
+.show-mm {
     display: block;
     z-index: 10;
     opacity: 1;
     transition: all 500ms;
 }
-.hide-mm{
-    display: none!important;
+
+.hide-mm {
+    display: none !important;
     opacity: 0;
     transition: all 500ms;
 

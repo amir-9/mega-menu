@@ -1,0 +1,133 @@
+:root {
+    --1701-mega-box: 1646px;
+    --1701-children: 1416px;
+    --1701-search-input: 765px;
+    --1701-subjects: 230px;
+
+    --1700-mega-box: 1400px;
+    --1700-children: 1170px;
+    --1700-search-input: 665px;
+    --1700-subjects: 230px;
+
+    --1400-mega-box: 1200px;
+    --1400-children: 980px;
+    --1400-search-input: 665px;
+    --1400-subjects: 220px;
+
+    --1260-mega-box: 980px;
+    --1260-children: 730px;
+    --1260-search-input: 565px;
+    --1260-subjects: 220px;
+
+}
+
+@media only screen and (min-width: 1700px) {
+    .header .container, .header .mega-box {
+        width: var(--1700-mega-box);
+    }
+
+    .mega-box .subjects-children, .mega-box .subjects-children .row {
+        width: var(--1700-children);
+    }
+
+    .header .search-input {
+        width: var(--1700-search-input);
+    }
+
+    .header .mega-box .subjects, .mega-box .subjects > li {
+        width: var(--1700-subjects);
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .header .container, .header .mega-box {
+        width: var(--1700-mega-box);
+    }
+
+    .mega-box .subjects-children, .mega-box .subjects-children .row {
+        width: var(--1700-children);
+    }
+
+    .header .search-input {
+        width: var(--1700-search-input);
+    }
+
+    .header .mega-box .subjects, .mega-box .subjects > li {
+        width: var(--1700-subjects);
+    }
+}
+
+@media only screen and (max-width: 1496px) {
+    .header .container, .header .mega-box {
+        width: var(--1400-mega-box);
+    }
+
+    .mega-box .subjects-children, .mega-box .subjects-children .row {
+        width: var(--1400-children);
+    }
+
+    .header .search-input {
+        width: var(--1400-search-input);
+    }
+
+    .header .mega-box .subjects, .mega-box .subjects > li {
+        width: var(--1400-subjects);
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    .header .container, .header .mega-box {
+        width: var(--1260-mega-box);
+    }
+
+    .mega-box .subjects-children, .mega-box .subjects-children .row {
+        width: var(--1260-children);
+    }
+
+    .header .search-input {
+        width: var(--1260-search-input);
+    }
+
+    .header .mega-box .subjects, .mega-box .subjects > li {
+        width: var(--1260-subjects);
+    }
+
+    #example-one > li:nth-child(8), #example-one > li:nth-child(9) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    #desktop-header{
+        display: none;
+    }
+    #tablet-header{
+        display: block;
+    }
+    .container {
+        flex-direction: column-reverse!important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
