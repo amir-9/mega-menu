@@ -119,6 +119,14 @@
     }
 }
 
+@media only screen and (max-width: 360px) {
+    #tablet-header .enter > div:first-child > span:last-child {
+        display: none;
+    }
+    #tablet-header .enter{
+        width: 60px;
+    }
+}
 
 
 

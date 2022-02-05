@@ -3,9 +3,9 @@ const burgerMenu = $('.burger-menu');
 const darkBg = $('#darkBg');
 const offer = $('.offer');
 const burgerMenuSubItems = $('.burger-menu-sub-items')
-let isSubItemClicked = false;
-bergerIcon.click(toggleMenu)
-darkBg.click(toggleMenu)
+
+bergerIcon.on('click',toggleMenu)
+darkBg.on('click',toggleMenu)
 
 offer.on('click', function () {
     burgerMenuSubItems.slideToggle('fast')
@@ -20,8 +20,9 @@ function toggleMenu() {
 
 $('.subjects>li>div').hide()
 $('.subjects>li').on('click', (e) => {
+    const selectedSubject = $('.selected-subject');
     if (!isInsideOfSub(e.target, 'items-div')) {
-        showUl($('.selected-subject').children('div'), $('.selected-subject').children('div').prev().find('.fa-chevron-down'))
+        showUl(selectedSubject.children('div'), selectedSubject.children('div').prev().find('.fa-chevron-down'))
     }
 })
 $('.sub>ul').hide()
@@ -39,7 +40,6 @@ $('.sub').on('click', (e) => {
 })
 
 function showUl(elementToSlide, elementToRotate) {
-    console.log(elementToRotate)
     elementToSlide.slideToggle('fast')
     $(elementToRotate).toggleClass('rotate-180')
 }
