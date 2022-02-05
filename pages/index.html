@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <title>mega-menu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+    
     <link rel="stylesheet" href="../assets/css/all.css">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="../assets/css/tablet.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
 </head>
 <body>
 <header id="desktop-header" class="header">
@@ -1097,6 +1100,7 @@
                             </ul>
                         
                         </div>
+                    
                     </li>
                     <li>
                         <a href="#">
@@ -1166,18 +1170,13 @@
         <div class="logo">Logo place</div>
         <div class="info"><i class="far fa-question-square"></i></div>
     </div>
-    <div class="middle">
-        <div>
+    <div class="header-middle">
+        <div class="header-search-div">
             <div class="search-input">
-                <div class="header-search">
-                    <div class="search-input">
-                        <button>
-                            <i class="far fa-search"></i>
-                        </button>
-                        <input type="search" placeholder="جست و جو در ...">
-                    </div>
-                    <div class="c-search__banner"></div>
-                </div>
+                <button>
+                    <i class="far fa-search"></i>
+                </button>
+                <input type="search" placeholder="جست و جو در ...">
             </div>
         </div>
         <div class="enter">
@@ -1190,15 +1189,1269 @@
             </div>
         </div>
     </div>
-    <div class="bottom">
-    
+    <div class="header-bottom">
+        <div>
+            <span><i class="fal fa-map-marker-alt"></i></span>
+            <span>لطفا شهر و استان خود را انتخاب کنید</span>
+        </div>
+        <div><i class="far fa-chevron-left"></i></div>
+    </div>
+    <div class="burger-menu">
+        <div class="burger-menu-logo">
+            <h2><a href="#" style="color: red;font-size: 36px;">logo</a></h2>
+        </div>
+        <div class="main-burger-nav">
+            <ul class="items">
+                <li class="offer">
+                    <div>
+                        <div>
+                            <span><i class="far fa-badge-percent"></i></span>
+                            <p>پیشنهاد ها و تخفیف ها</p>
+                        </div>
+                        <span><i class="far fa-chevron-down"></i></span>
+                    </div>
+                </li>
+                <li class="burger-menu-sub-items" style="display: none">
+                    <ul>
+                        <li><a href="#">مشاهده همه پیشنهادها</a></li>
+                        <li><a href="#">پرفروش ترین کالاها</a></li>
+                        <li><a href="#">کالاهای شگفت انگیز</a></li>
+                        <li><a href="#">شگفت انگیز</a></li>
+                        <li><a href="#">شگفت انگیز سوپرمارکتی</a></li>
+                        <li><a href="#">فروش ویژه</a></li>
+                        <li><a href="#">باهر خرید هدیه بگیر</a></li>
+                        <li><a href="#">تخفیف پایان فصل</a></li>
+                        <li><a href="#">کارت هدیه خرید از دیجی کالا</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span><i class="fas fa-trophy-alt"></i></span>
+                    <a href="#">دیجی کالای من</a>
+                </li>
+                <li>
+                    <span><i class="fas fa-bags-shopping"></i></span>
+                    <a href="#">سوپرمارکت</a>
+                </li>
+                <li>
+                    <span><i class="fas fa-plus-hexagon"></i></span>
+                    <a href="#">دیجی پلاس</a>
+                </li>
+                <li>
+                    <span><i class="fad fa-coin"></i></span>
+                    <a href="#">دیجی پی</a>
+                </li>
+                <li>
+                    <span><i class="far fa-typewriter"></i></span>
+                    <a href="#">مگنت</a>
+                </li>
+                <li>
+                    <span><i class="far fa-store-alt"></i></span>
+                    <a href="#">فروشنده شوید</a>
+                </li>
+            </ul>
+        </div>
+        <div class="burger-category">
+            <ul class="subjects">
+                <li class="digital">
+                    <span><i class="fad fa-laptop"></i></span>
+                    <span>کالای دیجیتال</span>
+                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                    <div class="items-div">
+                        <h4 class="all-items-of-category">
+                            <a href="#"><span>همه دسته بندی های کالای دیجیتال</span>
+                                <span><i class="far fa-chevron-left"></i></span></a>
+                        </h4>
+                        <div class="column">
+                            <div class="sub">
+                                <h4>
+                                    <span class="right-border"></span>
+                                    <a href="#">لوازم جانبی گوشی</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">کیف و کاور گوشی</a></li>
+                                    <li><a href="#">پاوربانک</a></li>
+                                    <li><a href="#">پایه نگهدارنده گوشی</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">گوشی موبایل</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                
+                                </h4>
+                                <ul>
+                                    <li><a href="#">سامسونگ</a></li>
+                                    <li><a href="#">هوآوی</a></li>
+                                    <li><a href="#">شیائومی</a></li>
+                                    <li><a href="#">آنر</a></li>
+                                    <li><a href="#">اپل</a></li>
+                                    <li><a href="#">نوکیا</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">واقعیت مجازی</a></h4>
+                            <h4><span class="right-border"></span><a href="#">مچ بند و ساعت هوشمند</a></h4>
+                            
+                            <h4><span class="right-border"></span><a href="#">هدفون، هدست، هندزفری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">اسپیکر بلوتوث و با سیم</a></h4>
+                            <h4><span class="right-border"></span><a href="#">هارد، فلش و ssd</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">دوربین</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">دوربین عکاسی دیجیتال</a></li>
+                                    <li><a href="#">دوربین ورزشی و فیلم برداری</a></li>
+                                    <li><a href="#">دوربین چاپ سریع</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">لوازم جانبی دوربین</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                
+                                </h4>
+                                <ul>
+                                    <li><a href="#">لنز</a></li>
+                                    <li><a href="#">کیف</a></li>
+                                    <li><a href="#">کارت حافظه</a></li>
+                                    <li><a href="#">کاغذ چاپ عکس</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">دوربین دو چشمی و شکاری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">تلسکوپ</a></h4>
+                            <h4><span class="right-border"></span><a href="#">پلی استیشن، ایکس باکس و بازی</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">کامپیوتر و تجهیزات جانبی</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">تجهیزات مخصوص بازی</a></li>
+                                    <li><a href="#">مانیتور</a></li>
+                                    <li><a href="#">کیس های اسمبل شده</a></li>
+                                    <li><a href="#">قطعات داخلی کامپیوتر</a></li>
+                                    <li><a href="#">ماوس</a></li>
+                                    <li><a href="#">کیبورد</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">لپ تاپ</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">لوازم جانبی لپ تاپ</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">کیف، کوله و کاور</a></li>
+                                    <li><a href="#">کابل صدا، AUX و HDMI</a></li>
+                                </ul>
+                            </div>
+                            
+                            <h4><span class="right-border"></span><a href="#">تبلت</a></h4>
+                            <h4><span class="right-border"></span><a href="َ#">شارژر تبلت و موبایل</a></h4>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کیف، کاور، لوازم جانبی تبلت</a>
+                            </h4>
+                            <h4><span class="right-border"></span><a href="#">باتری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">دوربین های تحت شبکه</a></h4>
+                            <h4><span class="right-border"></span><a href="#">مودب و تجهیزات شبکه</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">ماشین های اداری</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">تلفن بی سیم و سانترال</a></li>
+                                    <li><a href="#">فکس</a></li>
+                                    <li><a href="#">پرینتر</a></li>
+                                    <li><a href="#">لوازم جانبی اداری</a></li>
+                                </ul>
+                            </div>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کتابخوان فیدیبوک</a>
+                            </h4>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کارت هدیه خرید از دیجی کالا</a>
+                            </h4>
+                        </div>
+                    </div>
+                </li>
+                <li class="car">
+                    <span><i class="fad fa-wrench"></i></span>
+                    <span>خودرو، ابزار و تجهیزات صنعتی</span>
+                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                    <div class="items-div">
+                        <h4 class="all-items-of-category">
+                            <a href="#"><span>همه دسته بندی های وسایل نقلیه و صنعتی</span><span><i
+                                    class="far fa-chevron-left"></i></span></a>
+                        </h4>
+                        <div class="column">
+                            <div class="sub">
+                                <h4>
+                                    <span class="right-border"></span>
+                                    <a href="#">لوازم جانبی گوشی</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">کیف و کاور گوشی</a></li>
+                                    <li><a href="#">پاوربانک</a></li>
+                                    <li><a href="#">پایه نگهدارنده گوشی</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">گوشی موبایل</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+            
+                                </h4>
+                                <ul>
+                                    <li><a href="#">سامسونگ</a></li>
+                                    <li><a href="#">هوآوی</a></li>
+                                    <li><a href="#">شیائومی</a></li>
+                                    <li><a href="#">آنر</a></li>
+                                    <li><a href="#">اپل</a></li>
+                                    <li><a href="#">نوکیا</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">واقعیت مجازی</a></h4>
+                            <h4><span class="right-border"></span><a href="#">مچ بند و ساعت هوشمند</a></h4>
+        
+                            <h4><span class="right-border"></span><a href="#">هدفون، هدست، هندزفری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">اسپیکر بلوتوث و با سیم</a></h4>
+                            <h4><span class="right-border"></span><a href="#">هارد، فلش و ssd</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">دوربین</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">دوربین عکاسی دیجیتال</a></li>
+                                    <li><a href="#">دوربین ورزشی و فیلم برداری</a></li>
+                                    <li><a href="#">دوربین چاپ سریع</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">لوازم جانبی دوربین</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+            
+                                </h4>
+                                <ul>
+                                    <li><a href="#">لنز</a></li>
+                                    <li><a href="#">کیف</a></li>
+                                    <li><a href="#">کارت حافظه</a></li>
+                                    <li><a href="#">کاغذ چاپ عکس</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">دوربین دو چشمی و شکاری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">تلسکوپ</a></h4>
+                            <h4><span class="right-border"></span><a href="#">پلی استیشن، ایکس باکس و بازی</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">کامپیوتر و تجهیزات جانبی</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">تجهیزات مخصوص بازی</a></li>
+                                    <li><a href="#">مانیتور</a></li>
+                                    <li><a href="#">کیس های اسمبل شده</a></li>
+                                    <li><a href="#">قطعات داخلی کامپیوتر</a></li>
+                                    <li><a href="#">ماوس</a></li>
+                                    <li><a href="#">کیبورد</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">لپ تاپ</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">لوازم جانبی لپ تاپ</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">کیف، کوله و کاور</a></li>
+                                    <li><a href="#">کابل صدا، AUX و HDMI</a></li>
+                                </ul>
+                            </div>
+        
+                            <h4><span class="right-border"></span><a href="#">تبلت</a></h4>
+                            <h4><span class="right-border"></span><a href="َ#">شارژر تبلت و موبایل</a></h4>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کیف، کاور، لوازم جانبی تبلت</a>
+                            </h4>
+                            <h4><span class="right-border"></span><a href="#">باتری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">دوربین های تحت شبکه</a></h4>
+                            <h4><span class="right-border"></span><a href="#">مودب و تجهیزات شبکه</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">ماشین های اداری</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">تلفن بی سیم و سانترال</a></li>
+                                    <li><a href="#">فکس</a></li>
+                                    <li><a href="#">پرینتر</a></li>
+                                    <li><a href="#">لوازم جانبی اداری</a></li>
+                                </ul>
+                            </div>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کتابخوان فیدیبوک</a>
+                            </h4>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کارت هدیه خرید از دیجی کالا</a>
+                            </h4>
+                        </div>
+                    </div>
+                
+                </li>
+                <li class="mod">
+                    <span><i class="fad fa-tshirt"></i></span>
+                    <span>مد و پوشاک</span>
+                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                    <div class="items-div">
+                        <div class="column">
+                            <div class="sub">
+                                <h4>
+                                    <span class="right-border"></span>
+                                    <a href="#">لوازم جانبی گوشی</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">کیف و کاور گوشی</a></li>
+                                    <li><a href="#">پاوربانک</a></li>
+                                    <li><a href="#">پایه نگهدارنده گوشی</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">گوشی موبایل</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+            
+                                </h4>
+                                <ul>
+                                    <li><a href="#">سامسونگ</a></li>
+                                    <li><a href="#">هوآوی</a></li>
+                                    <li><a href="#">شیائومی</a></li>
+                                    <li><a href="#">آنر</a></li>
+                                    <li><a href="#">اپل</a></li>
+                                    <li><a href="#">نوکیا</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">واقعیت مجازی</a></h4>
+                            <h4><span class="right-border"></span><a href="#">مچ بند و ساعت هوشمند</a></h4>
+        
+                            <h4><span class="right-border"></span><a href="#">هدفون، هدست، هندزفری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">اسپیکر بلوتوث و با سیم</a></h4>
+                            <h4><span class="right-border"></span><a href="#">هارد، فلش و ssd</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">دوربین</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">دوربین عکاسی دیجیتال</a></li>
+                                    <li><a href="#">دوربین ورزشی و فیلم برداری</a></li>
+                                    <li><a href="#">دوربین چاپ سریع</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">لوازم جانبی دوربین</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+            
+                                </h4>
+                                <ul>
+                                    <li><a href="#">لنز</a></li>
+                                    <li><a href="#">کیف</a></li>
+                                    <li><a href="#">کارت حافظه</a></li>
+                                    <li><a href="#">کاغذ چاپ عکس</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">دوربین دو چشمی و شکاری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">تلسکوپ</a></h4>
+                            <h4><span class="right-border"></span><a href="#">پلی استیشن، ایکس باکس و بازی</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">کامپیوتر و تجهیزات جانبی</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">تجهیزات مخصوص بازی</a></li>
+                                    <li><a href="#">مانیتور</a></li>
+                                    <li><a href="#">کیس های اسمبل شده</a></li>
+                                    <li><a href="#">قطعات داخلی کامپیوتر</a></li>
+                                    <li><a href="#">ماوس</a></li>
+                                    <li><a href="#">کیبورد</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">لپ تاپ</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">لوازم جانبی لپ تاپ</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">کیف، کوله و کاور</a></li>
+                                    <li><a href="#">کابل صدا، AUX و HDMI</a></li>
+                                </ul>
+                            </div>
+        
+                            <h4><span class="right-border"></span><a href="#">تبلت</a></h4>
+                            <h4><span class="right-border"></span><a href="َ#">شارژر تبلت و موبایل</a></h4>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کیف، کاور، لوازم جانبی تبلت</a>
+                            </h4>
+                            <h4><span class="right-border"></span><a href="#">باتری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">دوربین های تحت شبکه</a></h4>
+                            <h4><span class="right-border"></span><a href="#">مودب و تجهیزات شبکه</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">ماشین های اداری</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">تلفن بی سیم و سانترال</a></li>
+                                    <li><a href="#">فکس</a></li>
+                                    <li><a href="#">پرینتر</a></li>
+                                    <li><a href="#">لوازم جانبی اداری</a></li>
+                                </ul>
+                            </div>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کتابخوان فیدیبوک</a>
+                            </h4>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کارت هدیه خرید از دیجی کالا</a>
+                            </h4>
+                        </div>
+                    </div>
+                </li>
+                <li class="baby">
+                    <span><i class="fad fa-baby"></i></span>
+                    <span>اسباب بازی، کودک و نوزاد</span>
+                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                    <div class="items-div">
+                        <div class="column">
+                            <div class="sub">
+                                <h4>
+                                    <span class="right-border"></span>
+                                    <a href="#">لوازم جانبی گوشی</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">کیف و کاور گوشی</a></li>
+                                    <li><a href="#">پاوربانک</a></li>
+                                    <li><a href="#">پایه نگهدارنده گوشی</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">گوشی موبایل</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+            
+                                </h4>
+                                <ul>
+                                    <li><a href="#">سامسونگ</a></li>
+                                    <li><a href="#">هوآوی</a></li>
+                                    <li><a href="#">شیائومی</a></li>
+                                    <li><a href="#">آنر</a></li>
+                                    <li><a href="#">اپل</a></li>
+                                    <li><a href="#">نوکیا</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">واقعیت مجازی</a></h4>
+                            <h4><span class="right-border"></span><a href="#">مچ بند و ساعت هوشمند</a></h4>
+        
+                            <h4><span class="right-border"></span><a href="#">هدفون، هدست، هندزفری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">اسپیکر بلوتوث و با سیم</a></h4>
+                            <h4><span class="right-border"></span><a href="#">هارد، فلش و ssd</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">دوربین</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">دوربین عکاسی دیجیتال</a></li>
+                                    <li><a href="#">دوربین ورزشی و فیلم برداری</a></li>
+                                    <li><a href="#">دوربین چاپ سریع</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">لوازم جانبی دوربین</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+            
+                                </h4>
+                                <ul>
+                                    <li><a href="#">لنز</a></li>
+                                    <li><a href="#">کیف</a></li>
+                                    <li><a href="#">کارت حافظه</a></li>
+                                    <li><a href="#">کاغذ چاپ عکس</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">دوربین دو چشمی و شکاری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">تلسکوپ</a></h4>
+                            <h4><span class="right-border"></span><a href="#">پلی استیشن، ایکس باکس و بازی</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">کامپیوتر و تجهیزات جانبی</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">تجهیزات مخصوص بازی</a></li>
+                                    <li><a href="#">مانیتور</a></li>
+                                    <li><a href="#">کیس های اسمبل شده</a></li>
+                                    <li><a href="#">قطعات داخلی کامپیوتر</a></li>
+                                    <li><a href="#">ماوس</a></li>
+                                    <li><a href="#">کیبورد</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">لپ تاپ</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">لوازم جانبی لپ تاپ</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">کیف، کوله و کاور</a></li>
+                                    <li><a href="#">کابل صدا، AUX و HDMI</a></li>
+                                </ul>
+                            </div>
+        
+                            <h4><span class="right-border"></span><a href="#">تبلت</a></h4>
+                            <h4><span class="right-border"></span><a href="َ#">شارژر تبلت و موبایل</a></h4>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کیف، کاور، لوازم جانبی تبلت</a>
+                            </h4>
+                            <h4><span class="right-border"></span><a href="#">باتری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">دوربین های تحت شبکه</a></h4>
+                            <h4><span class="right-border"></span><a href="#">مودب و تجهیزات شبکه</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">ماشین های اداری</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">تلفن بی سیم و سانترال</a></li>
+                                    <li><a href="#">فکس</a></li>
+                                    <li><a href="#">پرینتر</a></li>
+                                    <li><a href="#">لوازم جانبی اداری</a></li>
+                                </ul>
+                            </div>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کتابخوان فیدیبوک</a>
+                            </h4>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کارت هدیه خرید از دیجی کالا</a>
+                            </h4>
+                        </div>
+                    </div>
+                </li>
+                <li class="super-market">
+                    <span><i class="fad fa-shopping-basket"></i></span>
+                    <span>کالاهای سوپرمارکتی</span>
+                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                    <div class="items-div">
+                        <div class="column">
+                            <div class="sub">
+                                <h4>
+                                    <span class="right-border"></span>
+                                    <a href="#">لوازم جانبی گوشی</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">کیف و کاور گوشی</a></li>
+                                    <li><a href="#">پاوربانک</a></li>
+                                    <li><a href="#">پایه نگهدارنده گوشی</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">گوشی موبایل</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+            
+                                </h4>
+                                <ul>
+                                    <li><a href="#">سامسونگ</a></li>
+                                    <li><a href="#">هوآوی</a></li>
+                                    <li><a href="#">شیائومی</a></li>
+                                    <li><a href="#">آنر</a></li>
+                                    <li><a href="#">اپل</a></li>
+                                    <li><a href="#">نوکیا</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">واقعیت مجازی</a></h4>
+                            <h4><span class="right-border"></span><a href="#">مچ بند و ساعت هوشمند</a></h4>
+        
+                            <h4><span class="right-border"></span><a href="#">هدفون، هدست، هندزفری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">اسپیکر بلوتوث و با سیم</a></h4>
+                            <h4><span class="right-border"></span><a href="#">هارد، فلش و ssd</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">دوربین</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">دوربین عکاسی دیجیتال</a></li>
+                                    <li><a href="#">دوربین ورزشی و فیلم برداری</a></li>
+                                    <li><a href="#">دوربین چاپ سریع</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">لوازم جانبی دوربین</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+            
+                                </h4>
+                                <ul>
+                                    <li><a href="#">لنز</a></li>
+                                    <li><a href="#">کیف</a></li>
+                                    <li><a href="#">کارت حافظه</a></li>
+                                    <li><a href="#">کاغذ چاپ عکس</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">دوربین دو چشمی و شکاری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">تلسکوپ</a></h4>
+                            <h4><span class="right-border"></span><a href="#">پلی استیشن، ایکس باکس و بازی</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">کامپیوتر و تجهیزات جانبی</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">تجهیزات مخصوص بازی</a></li>
+                                    <li><a href="#">مانیتور</a></li>
+                                    <li><a href="#">کیس های اسمبل شده</a></li>
+                                    <li><a href="#">قطعات داخلی کامپیوتر</a></li>
+                                    <li><a href="#">ماوس</a></li>
+                                    <li><a href="#">کیبورد</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">لپ تاپ</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">لوازم جانبی لپ تاپ</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">کیف، کوله و کاور</a></li>
+                                    <li><a href="#">کابل صدا، AUX و HDMI</a></li>
+                                </ul>
+                            </div>
+        
+                            <h4><span class="right-border"></span><a href="#">تبلت</a></h4>
+                            <h4><span class="right-border"></span><a href="َ#">شارژر تبلت و موبایل</a></h4>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کیف، کاور، لوازم جانبی تبلت</a>
+                            </h4>
+                            <h4><span class="right-border"></span><a href="#">باتری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">دوربین های تحت شبکه</a></h4>
+                            <h4><span class="right-border"></span><a href="#">مودب و تجهیزات شبکه</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">ماشین های اداری</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">تلفن بی سیم و سانترال</a></li>
+                                    <li><a href="#">فکس</a></li>
+                                    <li><a href="#">پرینتر</a></li>
+                                    <li><a href="#">لوازم جانبی اداری</a></li>
+                                </ul>
+                            </div>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کتابخوان فیدیبوک</a>
+                            </h4>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کارت هدیه خرید از دیجی کالا</a>
+                            </h4>
+                        </div>
+                    </div>
+                </li>
+                <li class="health">
+                    <span><i class="fad fa-heartbeat"></i></span>
+                    <span>زیبایی و سلامت</span>
+                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                    <div class="items-div">
+                        <div class="column">
+                            <div class="sub">
+                                <h4>
+                                    <span class="right-border"></span>
+                                    <a href="#">لوازم جانبی گوشی</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">کیف و کاور گوشی</a></li>
+                                    <li><a href="#">پاوربانک</a></li>
+                                    <li><a href="#">پایه نگهدارنده گوشی</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">گوشی موبایل</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+            
+                                </h4>
+                                <ul>
+                                    <li><a href="#">سامسونگ</a></li>
+                                    <li><a href="#">هوآوی</a></li>
+                                    <li><a href="#">شیائومی</a></li>
+                                    <li><a href="#">آنر</a></li>
+                                    <li><a href="#">اپل</a></li>
+                                    <li><a href="#">نوکیا</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">واقعیت مجازی</a></h4>
+                            <h4><span class="right-border"></span><a href="#">مچ بند و ساعت هوشمند</a></h4>
+        
+                            <h4><span class="right-border"></span><a href="#">هدفون، هدست، هندزفری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">اسپیکر بلوتوث و با سیم</a></h4>
+                            <h4><span class="right-border"></span><a href="#">هارد، فلش و ssd</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">دوربین</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">دوربین عکاسی دیجیتال</a></li>
+                                    <li><a href="#">دوربین ورزشی و فیلم برداری</a></li>
+                                    <li><a href="#">دوربین چاپ سریع</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">لوازم جانبی دوربین</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+            
+                                </h4>
+                                <ul>
+                                    <li><a href="#">لنز</a></li>
+                                    <li><a href="#">کیف</a></li>
+                                    <li><a href="#">کارت حافظه</a></li>
+                                    <li><a href="#">کاغذ چاپ عکس</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">دوربین دو چشمی و شکاری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">تلسکوپ</a></h4>
+                            <h4><span class="right-border"></span><a href="#">پلی استیشن، ایکس باکس و بازی</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">کامپیوتر و تجهیزات جانبی</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">تجهیزات مخصوص بازی</a></li>
+                                    <li><a href="#">مانیتور</a></li>
+                                    <li><a href="#">کیس های اسمبل شده</a></li>
+                                    <li><a href="#">قطعات داخلی کامپیوتر</a></li>
+                                    <li><a href="#">ماوس</a></li>
+                                    <li><a href="#">کیبورد</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">لپ تاپ</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">لوازم جانبی لپ تاپ</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">کیف، کوله و کاور</a></li>
+                                    <li><a href="#">کابل صدا، AUX و HDMI</a></li>
+                                </ul>
+                            </div>
+        
+                            <h4><span class="right-border"></span><a href="#">تبلت</a></h4>
+                            <h4><span class="right-border"></span><a href="َ#">شارژر تبلت و موبایل</a></h4>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کیف، کاور، لوازم جانبی تبلت</a>
+                            </h4>
+                            <h4><span class="right-border"></span><a href="#">باتری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">دوربین های تحت شبکه</a></h4>
+                            <h4><span class="right-border"></span><a href="#">مودب و تجهیزات شبکه</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">ماشین های اداری</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">تلفن بی سیم و سانترال</a></li>
+                                    <li><a href="#">فکس</a></li>
+                                    <li><a href="#">پرینتر</a></li>
+                                    <li><a href="#">لوازم جانبی اداری</a></li>
+                                </ul>
+                            </div>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کتابخوان فیدیبوک</a>
+                            </h4>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کارت هدیه خرید از دیجی کالا</a>
+                            </h4>
+                        </div>
+                    </div>
+                </li>
+                <li class="home">
+                    <span><i class="fad fa-loveseat"></i></span>
+                    <span>خانه و آشپزخانه</span>
+                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                    <div class="items-div">
+                        <div class="column">
+                            <div class="sub">
+                                <h4>
+                                    <span class="right-border"></span>
+                                    <a href="#">لوازم جانبی گوشی</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">کیف و کاور گوشی</a></li>
+                                    <li><a href="#">پاوربانک</a></li>
+                                    <li><a href="#">پایه نگهدارنده گوشی</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">گوشی موبایل</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+            
+                                </h4>
+                                <ul>
+                                    <li><a href="#">سامسونگ</a></li>
+                                    <li><a href="#">هوآوی</a></li>
+                                    <li><a href="#">شیائومی</a></li>
+                                    <li><a href="#">آنر</a></li>
+                                    <li><a href="#">اپل</a></li>
+                                    <li><a href="#">نوکیا</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">واقعیت مجازی</a></h4>
+                            <h4><span class="right-border"></span><a href="#">مچ بند و ساعت هوشمند</a></h4>
+        
+                            <h4><span class="right-border"></span><a href="#">هدفون، هدست، هندزفری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">اسپیکر بلوتوث و با سیم</a></h4>
+                            <h4><span class="right-border"></span><a href="#">هارد، فلش و ssd</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">دوربین</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">دوربین عکاسی دیجیتال</a></li>
+                                    <li><a href="#">دوربین ورزشی و فیلم برداری</a></li>
+                                    <li><a href="#">دوربین چاپ سریع</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">لوازم جانبی دوربین</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+            
+                                </h4>
+                                <ul>
+                                    <li><a href="#">لنز</a></li>
+                                    <li><a href="#">کیف</a></li>
+                                    <li><a href="#">کارت حافظه</a></li>
+                                    <li><a href="#">کاغذ چاپ عکس</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">دوربین دو چشمی و شکاری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">تلسکوپ</a></h4>
+                            <h4><span class="right-border"></span><a href="#">پلی استیشن، ایکس باکس و بازی</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">کامپیوتر و تجهیزات جانبی</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">تجهیزات مخصوص بازی</a></li>
+                                    <li><a href="#">مانیتور</a></li>
+                                    <li><a href="#">کیس های اسمبل شده</a></li>
+                                    <li><a href="#">قطعات داخلی کامپیوتر</a></li>
+                                    <li><a href="#">ماوس</a></li>
+                                    <li><a href="#">کیبورد</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">لپ تاپ</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">لوازم جانبی لپ تاپ</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">کیف، کوله و کاور</a></li>
+                                    <li><a href="#">کابل صدا، AUX و HDMI</a></li>
+                                </ul>
+                            </div>
+        
+                            <h4><span class="right-border"></span><a href="#">تبلت</a></h4>
+                            <h4><span class="right-border"></span><a href="َ#">شارژر تبلت و موبایل</a></h4>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کیف، کاور، لوازم جانبی تبلت</a>
+                            </h4>
+                            <h4><span class="right-border"></span><a href="#">باتری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">دوربین های تحت شبکه</a></h4>
+                            <h4><span class="right-border"></span><a href="#">مودب و تجهیزات شبکه</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">ماشین های اداری</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">تلفن بی سیم و سانترال</a></li>
+                                    <li><a href="#">فکس</a></li>
+                                    <li><a href="#">پرینتر</a></li>
+                                    <li><a href="#">لوازم جانبی اداری</a></li>
+                                </ul>
+                            </div>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کتابخوان فیدیبوک</a>
+                            </h4>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کارت هدیه خرید از دیجی کالا</a>
+                            </h4>
+                        </div>
+                    </div>
+                </li>
+                <li class="book">
+                    <span><i class="fad fa-pencil-ruler"></i></span>
+                    <span>کتاب، لوازم التحریر و هنر</span>
+                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                    <div class="items-div">
+                        <div class="column">
+                            <div class="sub">
+                                <h4>
+                                    <span class="right-border"></span>
+                                    <a href="#">لوازم جانبی گوشی</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">کیف و کاور گوشی</a></li>
+                                    <li><a href="#">پاوربانک</a></li>
+                                    <li><a href="#">پایه نگهدارنده گوشی</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">گوشی موبایل</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+            
+                                </h4>
+                                <ul>
+                                    <li><a href="#">سامسونگ</a></li>
+                                    <li><a href="#">هوآوی</a></li>
+                                    <li><a href="#">شیائومی</a></li>
+                                    <li><a href="#">آنر</a></li>
+                                    <li><a href="#">اپل</a></li>
+                                    <li><a href="#">نوکیا</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">واقعیت مجازی</a></h4>
+                            <h4><span class="right-border"></span><a href="#">مچ بند و ساعت هوشمند</a></h4>
+        
+                            <h4><span class="right-border"></span><a href="#">هدفون، هدست، هندزفری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">اسپیکر بلوتوث و با سیم</a></h4>
+                            <h4><span class="right-border"></span><a href="#">هارد، فلش و ssd</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">دوربین</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">دوربین عکاسی دیجیتال</a></li>
+                                    <li><a href="#">دوربین ورزشی و فیلم برداری</a></li>
+                                    <li><a href="#">دوربین چاپ سریع</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">لوازم جانبی دوربین</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+            
+                                </h4>
+                                <ul>
+                                    <li><a href="#">لنز</a></li>
+                                    <li><a href="#">کیف</a></li>
+                                    <li><a href="#">کارت حافظه</a></li>
+                                    <li><a href="#">کاغذ چاپ عکس</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">دوربین دو چشمی و شکاری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">تلسکوپ</a></h4>
+                            <h4><span class="right-border"></span><a href="#">پلی استیشن، ایکس باکس و بازی</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">کامپیوتر و تجهیزات جانبی</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">تجهیزات مخصوص بازی</a></li>
+                                    <li><a href="#">مانیتور</a></li>
+                                    <li><a href="#">کیس های اسمبل شده</a></li>
+                                    <li><a href="#">قطعات داخلی کامپیوتر</a></li>
+                                    <li><a href="#">ماوس</a></li>
+                                    <li><a href="#">کیبورد</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">لپ تاپ</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">لوازم جانبی لپ تاپ</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">کیف، کوله و کاور</a></li>
+                                    <li><a href="#">کابل صدا، AUX و HDMI</a></li>
+                                </ul>
+                            </div>
+        
+                            <h4><span class="right-border"></span><a href="#">تبلت</a></h4>
+                            <h4><span class="right-border"></span><a href="َ#">شارژر تبلت و موبایل</a></h4>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کیف، کاور، لوازم جانبی تبلت</a>
+                            </h4>
+                            <h4><span class="right-border"></span><a href="#">باتری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">دوربین های تحت شبکه</a></h4>
+                            <h4><span class="right-border"></span><a href="#">مودب و تجهیزات شبکه</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">ماشین های اداری</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">تلفن بی سیم و سانترال</a></li>
+                                    <li><a href="#">فکس</a></li>
+                                    <li><a href="#">پرینتر</a></li>
+                                    <li><a href="#">لوازم جانبی اداری</a></li>
+                                </ul>
+                            </div>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کتابخوان فیدیبوک</a>
+                            </h4>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کارت هدیه خرید از دیجی کالا</a>
+                            </h4>
+                        </div>
+                    </div>
+                </li>
+                <li class="sport">
+                    <span><i class="fad fa-campground"></i></span>
+                    <span>ورزش و سفر</span>
+                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                    <div class="items-div">
+                        <div class="column">
+                            <div class="sub">
+                                <h4>
+                                    <span class="right-border"></span>
+                                    <a href="#">لوازم جانبی گوشی</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">کیف و کاور گوشی</a></li>
+                                    <li><a href="#">پاوربانک</a></li>
+                                    <li><a href="#">پایه نگهدارنده گوشی</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">گوشی موبایل</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+            
+                                </h4>
+                                <ul>
+                                    <li><a href="#">سامسونگ</a></li>
+                                    <li><a href="#">هوآوی</a></li>
+                                    <li><a href="#">شیائومی</a></li>
+                                    <li><a href="#">آنر</a></li>
+                                    <li><a href="#">اپل</a></li>
+                                    <li><a href="#">نوکیا</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">واقعیت مجازی</a></h4>
+                            <h4><span class="right-border"></span><a href="#">مچ بند و ساعت هوشمند</a></h4>
+        
+                            <h4><span class="right-border"></span><a href="#">هدفون، هدست، هندزفری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">اسپیکر بلوتوث و با سیم</a></h4>
+                            <h4><span class="right-border"></span><a href="#">هارد، فلش و ssd</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">دوربین</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">دوربین عکاسی دیجیتال</a></li>
+                                    <li><a href="#">دوربین ورزشی و فیلم برداری</a></li>
+                                    <li><a href="#">دوربین چاپ سریع</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">لوازم جانبی دوربین</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+            
+                                </h4>
+                                <ul>
+                                    <li><a href="#">لنز</a></li>
+                                    <li><a href="#">کیف</a></li>
+                                    <li><a href="#">کارت حافظه</a></li>
+                                    <li><a href="#">کاغذ چاپ عکس</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">دوربین دو چشمی و شکاری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">تلسکوپ</a></h4>
+                            <h4><span class="right-border"></span><a href="#">پلی استیشن، ایکس باکس و بازی</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">کامپیوتر و تجهیزات جانبی</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">تجهیزات مخصوص بازی</a></li>
+                                    <li><a href="#">مانیتور</a></li>
+                                    <li><a href="#">کیس های اسمبل شده</a></li>
+                                    <li><a href="#">قطعات داخلی کامپیوتر</a></li>
+                                    <li><a href="#">ماوس</a></li>
+                                    <li><a href="#">کیبورد</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">لپ تاپ</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">لوازم جانبی لپ تاپ</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">کیف، کوله و کاور</a></li>
+                                    <li><a href="#">کابل صدا، AUX و HDMI</a></li>
+                                </ul>
+                            </div>
+        
+                            <h4><span class="right-border"></span><a href="#">تبلت</a></h4>
+                            <h4><span class="right-border"></span><a href="َ#">شارژر تبلت و موبایل</a></h4>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کیف، کاور، لوازم جانبی تبلت</a>
+                            </h4>
+                            <h4><span class="right-border"></span><a href="#">باتری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">دوربین های تحت شبکه</a></h4>
+                            <h4><span class="right-border"></span><a href="#">مودب و تجهیزات شبکه</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">ماشین های اداری</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">تلفن بی سیم و سانترال</a></li>
+                                    <li><a href="#">فکس</a></li>
+                                    <li><a href="#">پرینتر</a></li>
+                                    <li><a href="#">لوازم جانبی اداری</a></li>
+                                </ul>
+                            </div>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کتابخوان فیدیبوک</a>
+                            </h4>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کارت هدیه خرید از دیجی کالا</a>
+                            </h4>
+                        </div>
+                    </div>
+                </li>
+                <li class="boomy">
+                    <span><i class="fad fa-flower-tulip"></i></span>
+                    <span>محصولات بومی و محلی</span>
+                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                    <div class="items-div">
+                        <div class="column">
+                            <div class="sub">
+                                <h4>
+                                    <span class="right-border"></span>
+                                    <a href="#">لوازم جانبی گوشی</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">کیف و کاور گوشی</a></li>
+                                    <li><a href="#">پاوربانک</a></li>
+                                    <li><a href="#">پایه نگهدارنده گوشی</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">گوشی موبایل</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+            
+                                </h4>
+                                <ul>
+                                    <li><a href="#">سامسونگ</a></li>
+                                    <li><a href="#">هوآوی</a></li>
+                                    <li><a href="#">شیائومی</a></li>
+                                    <li><a href="#">آنر</a></li>
+                                    <li><a href="#">اپل</a></li>
+                                    <li><a href="#">نوکیا</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">واقعیت مجازی</a></h4>
+                            <h4><span class="right-border"></span><a href="#">مچ بند و ساعت هوشمند</a></h4>
+        
+                            <h4><span class="right-border"></span><a href="#">هدفون، هدست، هندزفری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">اسپیکر بلوتوث و با سیم</a></h4>
+                            <h4><span class="right-border"></span><a href="#">هارد، فلش و ssd</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">دوربین</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">دوربین عکاسی دیجیتال</a></li>
+                                    <li><a href="#">دوربین ورزشی و فیلم برداری</a></li>
+                                    <li><a href="#">دوربین چاپ سریع</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">لوازم جانبی دوربین</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+            
+                                </h4>
+                                <ul>
+                                    <li><a href="#">لنز</a></li>
+                                    <li><a href="#">کیف</a></li>
+                                    <li><a href="#">کارت حافظه</a></li>
+                                    <li><a href="#">کاغذ چاپ عکس</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">دوربین دو چشمی و شکاری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">تلسکوپ</a></h4>
+                            <h4><span class="right-border"></span><a href="#">پلی استیشن، ایکس باکس و بازی</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">کامپیوتر و تجهیزات جانبی</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">تجهیزات مخصوص بازی</a></li>
+                                    <li><a href="#">مانیتور</a></li>
+                                    <li><a href="#">کیس های اسمبل شده</a></li>
+                                    <li><a href="#">قطعات داخلی کامپیوتر</a></li>
+                                    <li><a href="#">ماوس</a></li>
+                                    <li><a href="#">کیبورد</a></li>
+                                </ul>
+                            </div>
+                            <h4><span class="right-border"></span><a href="#">لپ تاپ</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">لوازم جانبی لپ تاپ</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">کیف، کوله و کاور</a></li>
+                                    <li><a href="#">کابل صدا، AUX و HDMI</a></li>
+                                </ul>
+                            </div>
+        
+                            <h4><span class="right-border"></span><a href="#">تبلت</a></h4>
+                            <h4><span class="right-border"></span><a href="َ#">شارژر تبلت و موبایل</a></h4>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کیف، کاور، لوازم جانبی تبلت</a>
+                            </h4>
+                            <h4><span class="right-border"></span><a href="#">باتری</a></h4>
+                            <h4><span class="right-border"></span><a href="#">دوربین های تحت شبکه</a></h4>
+                            <h4><span class="right-border"></span><a href="#">مودب و تجهیزات شبکه</a></h4>
+                            <div class="sub">
+                                <h4><span class="right-border"></span><a href="#">ماشین های اداری</a>
+                                    <span class="chevron"><i class="far fa-chevron-down"></i></span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">تلفن بی سیم و سانترال</a></li>
+                                    <li><a href="#">فکس</a></li>
+                                    <li><a href="#">پرینتر</a></li>
+                                    <li><a href="#">لوازم جانبی اداری</a></li>
+                                </ul>
+                            </div>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کتابخوان فیدیبوک</a>
+                            </h4>
+                            <h4>
+                                <span class="right-border"></span>
+                                <a href="#">کارت هدیه خرید از دیجی کالا</a>
+                            </h4>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        
+        </div>
     </div>
 </header>
-
+<div id="darkBg"></div>
 <section style="height: 1500px">
 
 </section>
-<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+
 <script src="../assets/js/app.js"></script>
+<script src="../assets/js/tablet-app.js"></script>
 </body>
 </html>

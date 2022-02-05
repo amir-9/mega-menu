@@ -37,6 +37,10 @@
     .header .mega-box .subjects, .mega-box .subjects > li {
         width: var(--1700-subjects);
     }
+
+    #tablet-header {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1700px) {
@@ -54,6 +58,10 @@
 
     .header .mega-box .subjects, .mega-box .subjects > li {
         width: var(--1700-subjects);
+    }
+
+    #tablet-header {
+        display: none;
     }
 }
 
@@ -98,14 +106,16 @@
 }
 
 @media only screen and (max-width: 1070px) {
-    #desktop-header{
+    #desktop-header {
         display: none;
     }
-    #tablet-header{
+
+    #tablet-header {
         display: block;
     }
+
     .container {
-        flex-direction: column-reverse!important;
+        flex-direction: column-reverse !important;
     }
 }
 

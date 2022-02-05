@@ -242,11 +242,11 @@ body {
     border-bottom: 1px solid #f0f0f1;
 }
 
-.selected-subject {
+#desktop-header .selected-subject {
     color: #ef394e;
     background: #f9f9f9;
     border-radius: 0 5px 5px 0;
-    border-top: 10px solid #f0f0f1;
+    border-top: 1px solid #f0f0f1;
     border-bottom: 1px solid #f0f0f1;
 
 }
