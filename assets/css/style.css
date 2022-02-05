@@ -79,14 +79,22 @@ body {
     width: 765px;
     display: flex;
     border-radius: 10px;
+    border: 3px solid rgba(55, 178, 255, 0);
+}
+.header .border-ol{
+    border: 3px solid rgba(55, 178, 255, 0.4);
+    box-shadow: 0 0 5px 1px rgba(55, 178, 255, 0.45);
+
 }
 
 .header .search-input input {
     border: none;
     background: none;
     width: 100%;
-    padding: 0.4rem;
-    line-height: 2rem;
+    padding: 0.3rem;
+    line-height: 1.8rem;
+    border-radius: 10px;
+    outline: none;
 }
 
 .header .search-input button {

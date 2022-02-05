@@ -1,5 +1,5 @@
 // noinspection JSJQueryEfficiency
-let megaMenu = $('.mega-box');
+const megaMenu = $('.mega-box');
 let $el, leftPos, newWidth;
 let firstLi=false;
 let isInsideOfMm = false;
@@ -67,6 +67,15 @@ $("#example-one>li")
 
 $magicLine[0].style.width = '0'
 ////////
+
+const searchDiv=$('#desktop-header .search-input')
+console.log(searchDiv.get(0))
+$('#desktop-header .search-input input').on('focus',()=>{
+    searchDiv.get(0).classList.add('border-ol')
+})
+$('#desktop-header .search-input input').on('focusout',()=>{
+    searchDiv.get(0).classList.remove('border-ol')
+})
 let section = $('section')
 let currentPageItem = $('.current_page_item');
 
@@ -109,7 +118,6 @@ megaMenuSubjects.hover(
 
     }
 )
-
 
 
 
